@@ -1,0 +1,21 @@
+const paragraph = document.createElement('p');
+paragraph.textContent = "Este es un párrafo agregado dinámicamente";
+document.body.appendChild(paragraph);
+
+paragraph.style.backgroundColor = 'lightblue';
+paragraph.style.fontWeight = 'bold';
+paragraph.classList.add('highlight');
+paragraph.id = 'unique-paragraph';
+
+const nameTag = document.createElement('p');
+nameTag.textContent = "Pavel Chamale";
+document.body.appendChild(nameTag);
+
+nameTag.style.backgroundColor = '#ffcccb'; // Fondo rosado claro
+nameTag.style.fontWeight = '700';  // Peso de fuente más marcado
+nameTag.classList.add('name-paragraph');
+nameTag.id = 'name-element';
+nameTag.setAttribute('data-name', 'Este es mi nombre');
+
+console.log(nameTag.getAttribute('data-name'));
+console.log(nameTag.hasAttribute('data-name'));
